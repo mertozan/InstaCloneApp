@@ -10,7 +10,7 @@ import Firebase
 import FirebaseAuth
 
 class ViewController: UIViewController {
-
+    
     @IBOutlet var emailText: UITextField!
     @IBOutlet var passwordText: UITextField!
     
@@ -18,7 +18,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
     }
-
+    
     @IBAction func signInClicked(_ sender: Any) {
         if emailText.text != "" && passwordText.text != "" {
             Auth.auth().signIn(withEmail: emailText.text!, password: passwordText.text!) { (authdata, error) in
@@ -31,9 +31,7 @@ class ViewController: UIViewController {
         }
     }
     
-    
     @IBAction func signUpClicked(_ sender: Any) {
-        
         if emailText.text != "" && passwordText.text != "" {
             Auth.auth().createUser(withEmail: emailText.text!, password: passwordText.text!) { (authdata, error) in
                 if error != nil {
@@ -46,9 +44,6 @@ class ViewController: UIViewController {
         } else {
             makeAlert(titleInput: "Error!", messageInput: "Username/Password?")
         }
-        
-        
-        
     }
     
     func makeAlert(titleInput: String, messageInput: String) {
