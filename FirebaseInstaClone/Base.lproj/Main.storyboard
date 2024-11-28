@@ -156,6 +156,12 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g6t-9y-37Y">
+                                                    <rect key="frame" x="324" y="14" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="44l-rr-h0m" firstAttribute="leading" secondItem="3Do-ap-dBO" secondAttribute="leadingMargin" constant="-28" id="06j-dW-a4C"/>
@@ -168,7 +174,9 @@
                                                 <constraint firstItem="140-mj-CCF" firstAttribute="leading" secondItem="Z5L-lZ-4Qv" secondAttribute="leading" id="Th3-Rw-XoH"/>
                                                 <constraint firstItem="140-mj-CCF" firstAttribute="trailing" secondItem="Z5L-lZ-4Qv" secondAttribute="trailing" id="crU-wD-Yom"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="44l-rr-h0m" secondAttribute="bottom" constant="-11" id="dIB-ro-p6Q"/>
+                                                <constraint firstItem="g6t-9y-37Y" firstAttribute="leading" secondItem="l9Y-Ef-1x5" secondAttribute="leading" id="e0D-AN-sb4"/>
                                                 <constraint firstItem="Z5L-lZ-4Qv" firstAttribute="top" secondItem="140-mj-CCF" secondAttribute="bottom" constant="8" id="kWo-pf-pwc"/>
+                                                <constraint firstItem="HPz-Ar-JSX" firstAttribute="baseline" secondItem="g6t-9y-37Y" secondAttribute="baseline" id="luW-nx-m5R"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="l9Y-Ef-1x5" secondAttribute="trailing" constant="31" id="mdM-nq-mN5"/>
                                                 <constraint firstItem="l9Y-Ef-1x5" firstAttribute="bottom" secondItem="3Do-ap-dBO" secondAttribute="bottomMargin" id="nh0-s0-Ec7"/>
                                                 <constraint firstItem="44l-rr-h0m" firstAttribute="top" secondItem="140-mj-CCF" secondAttribute="bottom" constant="35" id="qpL-6j-MvR"/>
@@ -176,6 +184,7 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="commentLabel" destination="Z5L-lZ-4Qv" id="nhk-sv-udW"/>
+                                            <outlet property="documentIdLabel" destination="g6t-9y-37Y" id="5t3-IT-7PS"/>
                                             <outlet property="likeLabel" destination="l9Y-Ef-1x5" id="7PI-o7-IsB"/>
                                             <outlet property="userEmailLabel" destination="HPz-Ar-JSX" id="cOP-AI-57D"/>
                                             <outlet property="userImageView" destination="140-mj-CCF" id="fQ2-sy-Red"/>
